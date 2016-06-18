@@ -1,0 +1,459 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>The CAD blocks &mdash; ScratchyCAD LP 0.0.2 Alpha documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ScratchyCAD LP 0.0.2 Alpha documentation" href="index.html"/>
+        <link rel="prev" title="Getting started" href="getting_started.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ScratchyCAD
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                LP 0.0.2 Alpha
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The CAD blocks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-main-block">Using the main block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-cube-block">Using the cube block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-sphere-block">Using the sphere block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-cylinder-block">Using the cylinder block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-polygon-block">Using the polygon block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-text3d-block">Using the text3D block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-part-block">Using the part block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-scale-block">Using the scale block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-rotate-block">Using the rotate block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-translate-block">Using the translate block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-setcolor-block">Using the setColor block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-extrude-block">Using the extrude block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-a-parametric-block">Making a parametric block</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ScratchyCAD</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>The CAD blocks</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/CAD.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-cad-blocks">
+<span id="cad"></span><h1>The CAD blocks<a class="headerlink" href="#the-cad-blocks" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="using-the-main-block">
+<span id="main"></span><h2>Using the main block<a class="headerlink" href="#using-the-main-block" title="Permalink to this headline">¶</a></h2>
+<p>The most important block in ScratchyCAD is the main block, this block is a function that returns what to draw on our canvas.
+this can be found under the CAD/Tools library.</p>
+<p>It looks like this:</p>
+<div class="figure" id="id1">
+<img alt="_static/mainblock.png" src="_static/mainblock.png" />
+<p class="caption"><span class="caption-text">the main block.</span></p>
+</div>
+<p>This means that everything you plug in this block is going to get drawn in the 3D space
+You can plug in any block from the Parts library test for yourself:</p>
+<div class="figure" id="id2">
+<img alt="_static/ex1.png" src="_static/ex1.png" />
+<p class="caption"><span class="caption-text">using the main block</span></p>
+</div>
+</div>
+<div class="section" id="using-the-cube-block">
+<span id="cube"></span><h2>Using the cube block<a class="headerlink" href="#using-the-cube-block" title="Permalink to this headline">¶</a></h2>
+<p>The Cube, cubes in ScratchyCAD can have different lenghts on each of their sides.
+The cube is found under the CAD/parts library
+Go on and grab the cube block and plug it to the main block.
+this is the ScratchyCAD default cube that measures 1x1x1 units.</p>
+<div class="figure" id="id3">
+<img alt="_static/defaultcube.png" src="_static/defaultcube.png" />
+<p class="caption"><span class="caption-text">ScratchyCAD&#8217;s default cube</span></p>
+</div>
+<p>The first parameter in the cube is asking for a size XYZ, for every parameter in ScratchyCAD
+that asks for XYZ we need to plug in a special block that contains a list of three numbers
+one for lenght (x), width (y) and height (z).
+for now grab a xyz block from the lists library and plug it to the cube block.</p>
+<div class="figure" id="id4">
+<img alt="_static/defaultcubelist.png" src="_static/defaultcubelist.png" />
+<p class="caption"><span class="caption-text">xyz block in the Lists ibrary</span></p>
+</div>
+<div class="figure" id="id5">
+<img alt="_static/defaultcubelist1.png" src="_static/defaultcubelist1.png" />
+<p class="caption"><span class="caption-text">xyz plugged to the cube block</span></p>
+</div>
+<p>Now we have a list we only need to get some values. Under the math library look for the first block that
+contains a value of 0, this is a number block and you guessed right, it returns the value that the user types on it.
+Go ahead and grab three number blocks for each of the xyz inputs. Try different numbers out,
+remember to click on DRAW every time.</p>
+<div class="figure" id="id6">
+<img alt="_static/cubenumber.png" src="_static/cubenumber.png" />
+<p class="caption"><span class="caption-text">the number block.</span></p>
+</div>
+<div class="figure" id="id7">
+<img alt="_static/cubenumber1.png" src="_static/cubenumber1.png" />
+<p class="caption"><span class="caption-text">testing values on the cube xyz input.</span></p>
+</div>
+<p>The rounded value has two options true or false if true it will add a bevel on the sides of our cube,
+the resolution will define the segments on the bevel and the radius will define the size of it.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<ul class="last simple">
+<li><strong>The radius can not be equal or larger than half of any of our size xyz values</strong>.</li>
+</ul>
+</div>
+<div class="figure" id="id8">
+<img alt="_static/cuberounded.png" src="_static/cuberounded.png" />
+<p class="caption"><span class="caption-text">testing values on the resolution and radius.</span></p>
+</div>
+<div class="figure" id="id9">
+<img alt="_static/cubeblock.png" src="_static/cubeblock.png" />
+<p class="caption"><span class="caption-text">The cube block.</span></p>
+</div>
+</div>
+<div class="section" id="using-the-sphere-block">
+<span id="sphere"></span><h2>Using the sphere block<a class="headerlink" href="#using-the-sphere-block" title="Permalink to this headline">¶</a></h2>
+<p>The sphere block can be found under the CAD/Parts library.</p>
+<div class="figure" id="id10">
+<img alt="_static/sphereblock.png" src="_static/sphereblock.png" />
+<p class="caption"><span class="caption-text">the default sphere block.</span></p>
+</div>
+<dl class="docutils">
+<dt>The sphere has three parameters:</dt>
+<dd><ul class="first last simple">
+<li>Diameter, a numeric value and defines the size of the sphere</li>
+<li>Resolution, a numeric value that defines the number of poligons that make the shape</li>
+<li>Icosphere , defines if the shpere should be drawn as a polyhedron, all sides will be identical triangles.</li>
+</ul>
+</dd>
+</dl>
+<div class="figure" id="id11">
+<img alt="_static/sphere.png" src="_static/sphere.png" />
+<p class="caption"><span class="caption-text">a false value returns a sphere.</span></p>
+</div>
+<div class="figure" id="id12">
+<img alt="_static/icosphere.png" src="_static/icosphere.png" />
+<p class="caption"><span class="caption-text">a true value returns a polyhedron</span></p>
+</div>
+<div class="figure" id="id13">
+<img alt="_static/sphereblock1.png" src="_static/sphereblock1.png" />
+<p class="caption"><span class="caption-text">the sphere block</span></p>
+</div>
+</div>
+<div class="section" id="using-the-cylinder-block">
+<span id="cylinder"></span><h2>Using the cylinder block<a class="headerlink" href="#using-the-cylinder-block" title="Permalink to this headline">¶</a></h2>
+<p>The cylinder block can be found under the CAD/Parts library.</p>
+<div class="figure" id="id14">
+<img alt="_static/cylinder.png" src="_static/cylinder.png" />
+<p class="caption"><span class="caption-text">the default cylinder block.</span></p>
+</div>
+<p>This block has five parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Diameter1, a numeric value that defines the size of the lower base.</li>
+<li>Diameter2, a numeric value that defines the size of the upper base.</li>
+<li>Height, a numeric value that defines how tall is the cylinder.</li>
+<li>Rounded, defines if the cylinder should be drawn with rounded caps instead of flat faces.</li>
+<li>Sides, a numeric value that defines how many sides our prism will have.</li>
+</ul>
+</div></blockquote>
+<div class="figure" id="id15">
+<img alt="_static/cylinder1.png" src="_static/cylinder1.png" />
+<p class="caption"><span class="caption-text">a cylinder with equal diameters and five sides.</span></p>
+</div>
+<div class="figure" id="id16">
+<img alt="_static/cylinder2.png" src="_static/cylinder2.png" />
+<p class="caption"><span class="caption-text">a cylinder with larger diameter2 and eight sides.</span></p>
+</div>
+<div class="figure" id="id17">
+<img alt="_static/cylinder3.png" src="_static/cylinder3.png" />
+<p class="caption"><span class="caption-text">a cylinder with a larger diameter1 and eight sides.</span></p>
+</div>
+<div class="figure" id="id18">
+<img alt="_static/pyramid.png" src="_static/pyramid.png" />
+<p class="caption"><span class="caption-text">a pyramid can be made with a size zero diameter2.</span></p>
+</div>
+<div class="figure" id="id19">
+<img alt="_static/cylinder4.png" src="_static/cylinder4.png" />
+<p class="caption"><span class="caption-text">activating the rounded parameter duplicates the value of the diameter1 in diameter2.</span></p>
+</div>
+</div>
+<div class="section" id="using-the-polygon-block">
+<span id="polygon"></span><h2>Using the polygon block<a class="headerlink" href="#using-the-polygon-block" title="Permalink to this headline">¶</a></h2>
+<p>The polygon block defines a 2D shape, this shape is given by a list of  at least three points (x,y,z) or vertices.
+This given list of vertex creates a face in the x,y plane.</p>
+<p>Go ahead and get the polygon block from the CAD/Parts library and plug it to your main function, by default it returns a
+triangle rectangle.</p>
+<div class="figure" id="id20">
+<img alt="_static/polygon.png" src="_static/polygon.png" />
+<p class="caption"><span class="caption-text">the polygon block with default vertex list.</span></p>
+</div>
+<p>To make things easer we have included the OpenSCAD-polygon-editor that allows you to draw from scratch or trace a shape from
+an image, click on the gear in the top left corner of the polygon editor.</p>
+<div class="figure" id="id21">
+<img alt="_static/polygoneditor.png" src="_static/polygoneditor.png" />
+<p class="caption"><span class="caption-text">the polygon editor interface.</span></p>
+</div>
+<p>From the selector menu (cursor icon) you can turn any point to a Bezier curve handle, or vertex.</p>
+<div class="figure" id="id22">
+<img alt="_static/polygonselector.png" src="_static/polygonselector.png" />
+<p class="caption"><span class="caption-text">the polygon selector menu.</span></p>
+</div>
+<p>We can add new vertices by clicking on the + icon next to the selector menu.</p>
+<div class="figure" id="id23">
+<img alt="_static/addapoint.png" src="_static/addapoint.png" />
+<p class="caption"><span class="caption-text">add vertex.</span></p>
+</div>
+<p>We delete vertices by clicking on the - icon next to the + icon.</p>
+<div class="figure" id="id24">
+<img alt="_static/deleteapoint.png" src="_static/deleteapoint.png" />
+<p class="caption"><span class="caption-text">add vertex.</span></p>
+</div>
+<p>Finally we can add an image to trace, by setting the URL, uploading it and then scaling it..</p>
+<div class="figure" id="id25">
+<img alt="_static/traceimage.png" src="_static/traceimage.png" />
+<p class="caption"><span class="caption-text">trace image.</span></p>
+</div>
+<p>Once we are done setting up the points for our shape click close and they will be automatically added to the polygon block.</p>
+</div>
+<div class="section" id="using-the-text3d-block">
+<span id="text3d"></span><h2>Using the text3D block<a class="headerlink" href="#using-the-text3d-block" title="Permalink to this headline">¶</a></h2>
+<p>The 3Dtext block can be found under the CAD/Parts library.</p>
+<p>It allows us to create a text based model, this block has the following main parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li>text : a string value with the characters we are going to draw.</li>
+<li>width: a numeric value that determines the thickness of the characters.</li>
+<li>height:  a numeric value that determines the extrusion amount of the characters.</li>
+<li>x: a numeric value, the starting point on X for the characters.</li>
+<li>y: a numeric value, the starting point on y for the characters.</li>
+</ul>
+</div></blockquote>
+<div class="figure" id="id26">
+<img alt="_static/text3d.png" src="_static/text3d.png" />
+<p class="caption"><span class="caption-text">the text3D block.</span></p>
+</div>
+</div>
+<div class="section" id="using-the-part-block">
+<span id="part"></span><h2>Using the part block<a class="headerlink" href="#using-the-part-block" title="Permalink to this headline">¶</a></h2>
+<p>It&#8217;s nice to be able to return different shapes, but most objects in real world are a mix
+of different shapes. Thats the what the Part  block is for! this one is found under the
+CAD/tools library</p>
+<div class="figure" id="id27">
+<img alt="_static/ex2.png" src="_static/ex2.png" />
+<p class="caption"><span class="caption-text">using the part block</span></p>
+</div>
+<p>The part block has three options:</p>
+<ul class="simple">
+<li>Union, adds two parts together.</li>
+</ul>
+<div class="figure" id="id28">
+<img alt="_static/union.png" src="_static/union.png" />
+<p class="caption"><span class="caption-text">union of a cube with a sphere</span></p>
+</div>
+<ul class="simple">
+<li>Difference, subtracts the second part from the first part, it&#8217;s order sensitive.</li>
+</ul>
+<div class="figure" id="id29">
+<img alt="_static/difference.png" src="_static/difference.png" />
+<p class="caption"><span class="caption-text">difference of a cube with a sphere</span></p>
+</div>
+<div class="figure" id="id30">
+<img alt="_static/difference1.png" src="_static/difference1.png" />
+<p class="caption"><span class="caption-text">difference of a sphere with a cube</span></p>
+</div>
+<ul class="simple">
+<li>Intersection, returns only the overlap of both shapes.</li>
+</ul>
+<div class="figure" id="id31">
+<img alt="_static/intersection.png" src="_static/intersection.png" />
+<p class="caption"><span class="caption-text">intersection of a cube with a sphere</span></p>
+</div>
+</div>
+<div class="section" id="using-the-scale-block">
+<h2>Using the scale block<a class="headerlink" href="#using-the-scale-block" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="using-the-rotate-block">
+<h2>Using the rotate block<a class="headerlink" href="#using-the-rotate-block" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="using-the-translate-block">
+<h2>Using the translate block<a class="headerlink" href="#using-the-translate-block" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="using-the-setcolor-block">
+<h2>Using the setColor block<a class="headerlink" href="#using-the-setcolor-block" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="using-the-extrude-block">
+<h2>Using the extrude block<a class="headerlink" href="#using-the-extrude-block" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="making-a-parametric-block">
+<h2>Making a parametric block<a class="headerlink" href="#making-a-parametric-block" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="getting_started.html" class="btn btn-neutral" title="Getting started" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Luis Arturo Pacheco.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'LP 0.0.2 Alpha',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

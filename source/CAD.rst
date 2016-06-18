@@ -1,0 +1,291 @@
+.. _cad:
+
+
+***************
+The CAD blocks
+***************
+
+.. _main:
+
+Using the main block
+=============================
+
+The most important block in ScratchyCAD is the main block, this block is a function that returns what to draw on our canvas.
+this can be found under the CAD/Tools library.
+
+It looks like this:
+
+.. figure:: /_static/mainblock.png
+
+      the main block.
+
+
+This means that everything you plug in this block is going to get drawn in the 3D space
+You can plug in any block from the Parts library test for yourself:
+
+.. figure:: /_static/ex1.png
+
+      using the main block
+
+.. _cube:
+
+Using the cube block
+=============================
+
+The Cube, cubes in ScratchyCAD can have different lenghts on each of their sides.
+The cube is found under the CAD/parts library
+Go on and grab the cube block and plug it to the main block.
+this is the ScratchyCAD default cube that measures 1x1x1 units.
+
+.. figure:: /_static/defaultcube.png
+
+      ScratchyCAD's default cube
+
+
+
+The first parameter in the cube is asking for a size XYZ, for every parameter in ScratchyCAD
+that asks for XYZ we need to plug in a special block that contains a list of three numbers
+one for lenght (x), width (y) and height (z).
+for now grab a xyz block from the lists library and plug it to the cube block.
+
+.. figure:: /_static/defaultcubelist.png
+
+      xyz block in the Lists ibrary
+
+.. figure:: /_static/defaultcubelist1.png
+
+      xyz plugged to the cube block
+
+Now we have a list we only need to get some values. Under the math library look for the first block that
+contains a value of 0, this is a number block and you guessed right, it returns the value that the user types on it.
+Go ahead and grab three number blocks for each of the xyz inputs. Try different numbers out,
+remember to click on DRAW every time.
+
+.. figure:: /_static/cubenumber.png
+
+      the number block.
+
+.. figure:: /_static/cubenumber1.png
+
+      testing values on the cube xyz input.
+
+The rounded value has two options true or false if true it will add a bevel on the sides of our cube,
+the resolution will define the segments on the bevel and the radius will define the size of it.
+
+.. warning::
+
+   - **The radius can not be equal or larger than half of any of our size xyz values**.
+
+.. figure:: /_static/cuberounded.png
+
+      testing values on the resolution and radius.
+
+.. figure:: /_static/cubeblock.png
+
+      The cube block.
+
+.. _sphere:
+
+Using the sphere block
+=============================
+
+The sphere block can be found under the CAD/Parts library.
+
+.. figure:: /_static/sphereblock.png
+
+      the default sphere block.
+
+The sphere has three parameters:
+      * Diameter, a numeric value and defines the size of the sphere
+      * Resolution, a numeric value that defines the number of poligons that make the shape
+      * Icosphere , defines if the shpere should be drawn as a polyhedron, all sides will be identical triangles.
+
+.. figure:: /_static/sphere.png
+
+      a false value returns a sphere.
+
+.. figure:: /_static/icosphere.png
+
+      a true value returns a polyhedron
+
+.. figure:: /_static/sphereblock1.png
+
+      the sphere block
+
+
+
+.. _cylinder:
+
+Using the cylinder block
+=============================
+
+The cylinder block can be found under the CAD/Parts library.
+
+.. figure:: /_static/cylinder.png
+
+      the default cylinder block.
+
+This block has five parameters:
+
+      * Diameter1, a numeric value that defines the size of the lower base.
+      * Diameter2, a numeric value that defines the size of the upper base.
+      * Height, a numeric value that defines how tall is the cylinder.
+      * Rounded, defines if the cylinder should be drawn with rounded caps instead of flat faces.
+      * Sides, a numeric value that defines how many sides our prism will have.
+
+.. figure:: /_static/cylinder1.png
+
+      a cylinder with equal diameters and five sides.
+
+.. figure:: /_static/cylinder2.png
+
+      a cylinder with larger diameter2 and eight sides.
+
+.. figure:: /_static/cylinder3.png
+
+      a cylinder with a larger diameter1 and eight sides.
+
+.. figure:: /_static/pyramid.png
+
+      a pyramid can be made with a size zero diameter2.
+
+.. figure:: /_static/cylinder4.png
+
+      activating the rounded parameter duplicates the value of the diameter1 in diameter2.
+
+.. _polygon:
+
+Using the polygon block
+=============================
+
+The polygon block defines a 2D shape, this shape is given by a list of  at least three points (x,y,z) or vertices.
+This given list of vertex creates a face in the x,y plane.
+
+Go ahead and get the polygon block from the CAD/Parts library and plug it to your main function, by default it returns a
+triangle rectangle.
+
+.. figure:: /_static/polygon.png
+
+      the polygon block with default vertex list.
+
+To make things easer we have included the OpenSCAD-polygon-editor that allows you to draw from scratch or trace a shape from
+an image, click on the gear in the top left corner of the polygon editor.
+
+.. figure:: /_static/polygoneditor.png
+
+      the polygon editor interface.
+
+From the selector menu (cursor icon) you can turn any point to a Bezier curve handle, or vertex.
+
+.. figure:: /_static/polygonselector.png
+
+      the polygon selector menu.
+
+We can add new vertices by clicking on the + icon next to the selector menu.
+
+.. figure:: /_static/addapoint.png
+
+      add vertex.
+
+We delete vertices by clicking on the - icon next to the + icon.
+
+.. figure:: /_static/deleteapoint.png
+
+      add vertex.
+
+Finally we can add an image to trace, by setting the URL, uploading it and then scaling it..
+
+.. figure:: /_static/traceimage.png
+
+      trace image.
+
+Once we are done setting up the points for our shape click close and they will be automatically added to the polygon block.
+
+
+.. _text3D:
+
+
+Using the text3D block
+=============================
+
+The 3Dtext block can be found under the CAD/Parts library.
+
+It allows us to create a text based model, this block has the following main parameters:
+
+  * text : a string value with the characters we are going to draw.
+  * width: a numeric value that determines the thickness of the characters.
+  * height:  a numeric value that determines the extrusion amount of the characters.
+  * x: a numeric value, the starting point on X for the characters.
+  * y: a numeric value, the starting point on y for the characters.
+
+.. figure:: /_static/text3d.png
+
+      the text3D block.
+
+
+.. _part:
+
+Using the part block
+=============================
+
+It's nice to be able to return different shapes, but most objects in real world are a mix
+of different shapes. Thats the what the Part  block is for! this one is found under the
+CAD/tools library
+
+.. figure:: /_static/ex2.png
+
+      using the part block
+
+The part block has three options:
+
+* Union, adds two parts together.
+
+.. figure:: /_static/union.png
+
+      union of a cube with a sphere
+
+* Difference, subtracts the second part from the first part, it's order sensitive.
+
+.. figure:: /_static/difference.png
+
+      difference of a cube with a sphere
+
+.. figure:: /_static/difference1.png
+
+      difference of a sphere with a cube
+
+* Intersection, returns only the overlap of both shapes.
+
+.. figure:: /_static/intersection.png
+
+      intersection of a cube with a sphere
+
+.. scale_:
+
+Using the scale block
+=============================
+
+.. rotate_:
+
+Using the rotate block
+=============================
+
+.. translate_:
+
+Using the translate block
+=============================
+
+.. setColor_:
+
+Using the setColor block
+=============================
+
+.. extrude_:
+
+Using the extrude block
+=============================
+
+.. parametric_:
+
+Making a parametric block
+=============================
