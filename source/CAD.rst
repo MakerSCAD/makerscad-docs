@@ -5,48 +5,56 @@
 The CAD blocks
 ***************
 
-.. _main:
+.. _basicscene:
 
-Using the main block
+The basic scene
 =============================
 
-The most important block in ScratchyCAD is the main block, this block is a function that returns what to draw on our canvas.
-this can be found under the CAD/Tools library.
+In order to start creating a 3D world we first need to set up a scene, in ScratchyCAD we have preloaded a basic scene that comes with some basic lightning, material and shadow presets.
+The basic scene can be found in the block library under the CAD/Tools section.
 
 It looks like this:
 
-.. figure:: /_static/mainblock.png
+.. figure:: /_static/images/CAD/newbasicscene.png
 
-      the main block.
+      the basic scene block.
+
+Go ahead and add a new basic scene to our workspace, right now it is an empty scene that we need to start adding objects to it in order to build our world.
+
+.. _sceneadd:
+
+Next  we have the scene.add block, this allows us to add an object to our scene objects include shapes, geometries, lights and more go ahead and take the scene.add block and plug it under the basic scene block.
 
 
-This means that everything you plug in this block is going to get drawn in the 3D space
-You can plug in any block from the Parts library test for yourself:
+.. figure:: /_static/images/CAD/sceneadd.png
 
-.. figure:: /_static/ex1.png
+      adding objects to our scene.
 
-      using the main block
+By default the add.scene block comes preloaded with a cube, go ahead and press the DRAW button! he have succesfully added our first object to our scene.
 
-.. _cube:
+.. figure:: /_static/images/CAD/firstscene.png
 
-Using the cube block
+
+Now that we know hot to add objects to our world lets look at some of them:
+
+.. _box:
+
+The Box
 =============================
 
-The Cube, cubes in ScratchyCAD can have different lenghts on each of their sides.
-The cube is found under the CAD/parts library
-Go on and grab the cube block and plug it to the main block.
-this is the ScratchyCAD default cube that measures 1x1x1 units.
+The box geometry is found under the CAD/parts library
+Go on and grab the cube block and plug it to the scene.add block.
 
-.. figure:: /_static/defaultcube.png
+this is the ScratchyCAD default box that measures 100x100x100 units.
 
-      ScratchyCAD's default cube
+.. figure:: /_static/images/CAD/box.png
 
-
+      ScratchyCAD's default box
 
 The first parameter in the cube is asking for a size XYZ, for every parameter in ScratchyCAD
 that asks for XYZ we need to plug in a special block that contains a list of three numbers
-one for lenght (x), width (y) and height (z).
-for now grab a xyz block from the lists library and plug it to the cube block.
+one for lenght (x), one for width (y) and one for height (z).
+For now grab lets use the preset and change the values on the  x,y,z inputs. Activate the Auto checkbox on the left right corner and see how each value affects the box.
 
 .. figure:: /_static/defaultcubelist.png
 
