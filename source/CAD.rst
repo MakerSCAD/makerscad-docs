@@ -65,9 +65,9 @@ For now grab lets use the preset and change the values on the  x,y,z inputs. Act
       xyz plugged to the cube block
 
 Now we have a list we only need to get some values. Under the math library look for the first block that
-contains a value of 0, this is a number block and you guessed right, it returns the value that the user types on it.
+contains a value of 0, this is a number block, it returns the value that the user types on it, or the variable that's connected to it.
 Go ahead and grab three number blocks for each of the xyz inputs. Try different numbers out,
-remember to click on DRAW every time.
+remember to turn un the AUTO in order to see the changes as you type.
 
 .. figure:: /_static/cubenumber.png
 
@@ -76,21 +76,6 @@ remember to click on DRAW every time.
 .. figure:: /_static/cubenumber1.png
 
       testing values on the cube xyz input.
-
-The rounded value has two options true or false if true it will add a bevel on the sides of our cube,
-the resolution will define the segments on the bevel and the radius will define the size of it.
-
-.. warning::
-
-   - **The radius can not be equal or larger than half of any of our size xyz values**.
-
-.. figure:: /_static/cuberounded.png
-
-      testing values on the resolution and radius.
-
-.. figure:: /_static/cubeblock.png
-
-      The cube block.
 
 .. _sphere:
 
@@ -103,24 +88,21 @@ The sphere block can be found under the CAD/Parts library.
 
       the default sphere block.
 
-The sphere has three parameters:
+The sphere has two parameters:
       * Diameter, a numeric value and defines the size of the sphere
       * Resolution, a numeric value that defines the number of poligons that make the shape
-      * Icosphere , defines if the shpere should be drawn as a polyhedron, all sides will be identical triangles.
-
-.. figure:: /_static/sphere.png
-
-      a false value returns a sphere.
-
-.. figure:: /_static/icosphere.png
-
-      a true value returns a polyhedron
 
 .. figure:: /_static/sphereblock1.png
 
       the sphere block
 
+.. figure:: /_static/sphereblock1.png
 
+      high resolution sphere
+
+.. figure:: /_static/sphereblock1.png
+
+      low resolution sphere
 
 .. _cylinder:
 
@@ -133,12 +115,11 @@ The cylinder block can be found under the CAD/Parts library.
 
       the default cylinder block.
 
-This block has five parameters:
+This block has four parameters:
 
       * Diameter1, a numeric value that defines the size of the lower base.
       * Diameter2, a numeric value that defines the size of the upper base.
       * Height, a numeric value that defines how tall is the cylinder.
-      * Rounded, defines if the cylinder should be drawn with rounded caps instead of flat faces.
       * Sides, a numeric value that defines how many sides our prism will have.
 
 .. figure:: /_static/cylinder1.png
@@ -157,9 +138,6 @@ This block has five parameters:
 
       a pyramid can be made with a size zero diameter2.
 
-.. figure:: /_static/cylinder4.png
-
-      activating the rounded parameter duplicates the value of the diameter1 in diameter2.
 
 .. _polygon:
 
@@ -221,10 +199,8 @@ The 3Dtext block can be found under the CAD/Parts library.
 It allows us to create a text based model, this block has the following main parameters:
 
   * text : a string value with the characters we are going to draw.
-  * width: a numeric value that determines the thickness of the characters.
+  * size: a numeric value that determines the thickness of the characters.
   * height:  a numeric value that determines the extrusion amount of the characters.
-  * x: a numeric value, the starting point on X for the characters.
-  * y: a numeric value, the starting point on y for the characters.
 
 .. figure:: /_static/text3d.png
 
@@ -236,8 +212,8 @@ It allows us to create a text based model, this block has the following main par
 Using the part block
 =============================
 
-It's nice to be able to return different shapes, but most objects in real world are a mix
-of different shapes. Thats the what the Part  block is for! this one is found under the
+It's nice to be able to return different basic shapes, but most objects in real world are a mix
+of different shapes that create a complex shape. Thats the what the Part  block is for! this one is found under the
 CAD/tools library
 
 .. figure:: /_static/ex2.png
