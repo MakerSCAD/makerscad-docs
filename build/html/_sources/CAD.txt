@@ -146,48 +146,47 @@ The torus has five parameters:
 Using the polygon block
 =============================
 
-The polygon block defines a 2D shape, this shape is given by a list of  at least three points (x,y,z) or vertices.
-This given list of vertex creates a face in the x,y plane.
+The polygon block defines a 2D shape, this shape is given by a list of  at least three points or vertices.
+This given list of vertices creates a face in the x,y plane.
 
 Go ahead and get the polygon block from the CAD/Parts library and plug it to your main function, by default it returns a
 triangle rectangle.
 
-.. figure:: /_static/polygon.png
+.. figure:: /_static/images/CAD/polygon.png
 
       the polygon block with default vertex list.
 
 To make things easer we have included the OpenSCAD-polygon-editor that allows you to draw from scratch or trace a shape from
 an image, click on the gear in the top left corner of the polygon editor.
 
-.. figure:: /_static/polygoneditor.png
+.. figure:: /_static/images/CAD/polygoneditor.png
 
       the polygon editor interface.
 
 From the selector menu (cursor icon) you can turn any point to a Bezier curve handle, or vertex.
 
-.. figure:: /_static/polygonselector.png
+.. figure:: /_static/images/CAD/polygonmenu.png
 
       the polygon selector menu.
 
 We can add new vertices by clicking on the + icon next to the selector menu.
 
-.. figure:: /_static/addapoint.png
-
-      add vertex.
 
 We delete vertices by clicking on the - icon next to the + icon.
 
-.. figure:: /_static/deleteapoint.png
-
-      add vertex.
 
 Finally we can add an image to trace, by setting the URL, uploading it and then scaling it..
 
-.. figure:: /_static/traceimage.png
-
-      trace image.
 
 Once we are done setting up the points for our shape click close and they will be automatically added to the polygon block.
+
+.. note:: Polygons require to be extruded to be displayed on the 3D view
+
+   In order to see the polygon we just defined its important to add an extrusion block or else it wont be displayed.
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kN7SnThxCyE" frameborder="0" allowfullscreen></iframe>
 
 
 .. _text3D:
@@ -204,9 +203,14 @@ It allows us to create a text based model, this block has the following main par
   * size: a numeric value that determines the thickness of the characters.
   * height:  a numeric value that determines the extrusion amount of the characters.
 
-.. figure:: /_static/text3d.png
+.. figure:: /_static/images/CAD/text3d.png
 
       the text3D block.
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gwjbRAR8mhg" frameborder="0" allowfullscreen></iframe>
+
 
 
 .. _part:
@@ -215,10 +219,10 @@ Using the part block
 =============================
 
 It's nice to be able to return different basic shapes, but most objects in real world are a mix
-of different shapes that create a complex shape. Thats the what the Part  block is for! this one is found under the
-CAD/tools library
+of different shapes that create a more complex shape. Thats the what the Part  block is for! this one is found under the
+CAD/tools library it allows us to make some CSG (Constructive Solid Geometry) modeling operations, that work great for 3D printing.
 
-.. figure:: /_static/ex2.png
+.. figure:: /_static/images/CAD/part.png
 
       using the part block
 
@@ -226,25 +230,28 @@ The part block has three options:
 
 * Union, adds two parts together.
 
-.. figure:: /_static/union.png
+.. figure:: /_static/images/CAD/union.png
 
       union of a cube with a sphere
 
 * Difference, subtracts the second part from the first part, it's order sensitive.
 
-.. figure:: /_static/difference.png
+.. figure:: /_static/images/CAD/difference.png
 
       difference of a cube with a sphere
 
-.. figure:: /_static/difference1.png
-
-      difference of a sphere with a cube
-
 * Intersection, returns only the overlap of both shapes.
 
-.. figure:: /_static/intersection.png
+.. figure:: /_static/images/CAD/intersection.png
 
       intersection of a cube with a sphere
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RWke0fLcbCo" frameborder="0" allowfullscreen></iframe>
+
+
+
 
 .. scale_:
 

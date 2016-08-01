@@ -242,42 +242,35 @@ remember to turn on the AUTO in order to see the changes as you type.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/px-Q_1qOajM" frameborder="0" allowfullscreen></iframe></div>
 <div class="section" id="using-the-polygon-block">
 <span id="polygon"></span><h2>Using the polygon block<a class="headerlink" href="#using-the-polygon-block" title="Permalink to this headline">¶</a></h2>
-<p>The polygon block defines a 2D shape, this shape is given by a list of  at least three points (x,y,z) or vertices.
-This given list of vertex creates a face in the x,y plane.</p>
+<p>The polygon block defines a 2D shape, this shape is given by a list of  at least three points or vertices.
+This given list of vertices creates a face in the x,y plane.</p>
 <p>Go ahead and get the polygon block from the CAD/Parts library and plug it to your main function, by default it returns a
 triangle rectangle.</p>
 <div class="figure" id="id7">
-<img alt="_static/polygon.png" src="_static/polygon.png" />
+<img alt="_images/polygon.png" src="_images/polygon.png" />
 <p class="caption"><span class="caption-text">the polygon block with default vertex list.</span></p>
 </div>
 <p>To make things easer we have included the OpenSCAD-polygon-editor that allows you to draw from scratch or trace a shape from
 an image, click on the gear in the top left corner of the polygon editor.</p>
 <div class="figure" id="id8">
-<img alt="_static/polygoneditor.png" src="_static/polygoneditor.png" />
+<img alt="_images/polygoneditor.png" src="_images/polygoneditor.png" />
 <p class="caption"><span class="caption-text">the polygon editor interface.</span></p>
 </div>
 <p>From the selector menu (cursor icon) you can turn any point to a Bezier curve handle, or vertex.</p>
 <div class="figure" id="id9">
-<img alt="_static/polygonselector.png" src="_static/polygonselector.png" />
+<img alt="_images/polygonmenu.png" src="_images/polygonmenu.png" />
 <p class="caption"><span class="caption-text">the polygon selector menu.</span></p>
 </div>
 <p>We can add new vertices by clicking on the + icon next to the selector menu.</p>
-<div class="figure" id="id10">
-<img alt="_static/addapoint.png" src="_static/addapoint.png" />
-<p class="caption"><span class="caption-text">add vertex.</span></p>
-</div>
 <p>We delete vertices by clicking on the - icon next to the + icon.</p>
-<div class="figure" id="id11">
-<img alt="_static/deleteapoint.png" src="_static/deleteapoint.png" />
-<p class="caption"><span class="caption-text">add vertex.</span></p>
-</div>
 <p>Finally we can add an image to trace, by setting the URL, uploading it and then scaling it..</p>
-<div class="figure" id="id12">
-<img alt="_static/traceimage.png" src="_static/traceimage.png" />
-<p class="caption"><span class="caption-text">trace image.</span></p>
-</div>
 <p>Once we are done setting up the points for our shape click close and they will be automatically added to the polygon block.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Polygons require to be extruded to be displayed on the 3D view</p>
+<p class="last">In order to see the polygon we just defined its important to add an extrusion block or else it wont be displayed.</p>
 </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kN7SnThxCyE" frameborder="0" allowfullscreen></iframe></div>
 <div class="section" id="using-the-text3d-block">
 <span id="text3d"></span><h2>Using the text3D block<a class="headerlink" href="#using-the-text3d-block" title="Permalink to this headline">¶</a></h2>
 <p>The 3Dtext block can be found under the CAD/Parts library.</p>
@@ -289,47 +282,43 @@ an image, click on the gear in the top left corner of the polygon editor.</p>
 <li>height:  a numeric value that determines the extrusion amount of the characters.</li>
 </ul>
 </div></blockquote>
-<div class="figure" id="id13">
-<img alt="_static/text3d.png" src="_static/text3d.png" />
+<div class="figure" id="id10">
+<img alt="_images/text3d.png" src="_images/text3d.png" />
 <p class="caption"><span class="caption-text">the text3D block.</span></p>
 </div>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gwjbRAR8mhg" frameborder="0" allowfullscreen></iframe></div>
 <div class="section" id="using-the-part-block">
 <span id="part"></span><h2>Using the part block<a class="headerlink" href="#using-the-part-block" title="Permalink to this headline">¶</a></h2>
 <p>It&#8217;s nice to be able to return different basic shapes, but most objects in real world are a mix
-of different shapes that create a complex shape. Thats the what the Part  block is for! this one is found under the
-CAD/tools library</p>
-<div class="figure" id="id14">
-<img alt="_static/ex2.png" src="_static/ex2.png" />
+of different shapes that create a more complex shape. Thats the what the Part  block is for! this one is found under the
+CAD/tools library it allows us to make some CSG (Constructive Solid Geometry) modeling operations, that work great for 3D printing.</p>
+<div class="figure" id="id11">
+<img alt="_images/part.png" src="_images/part.png" />
 <p class="caption"><span class="caption-text">using the part block</span></p>
 </div>
 <p>The part block has three options:</p>
 <ul class="simple">
 <li>Union, adds two parts together.</li>
 </ul>
-<div class="figure" id="id15">
-<img alt="_static/union.png" src="_static/union.png" />
+<div class="figure" id="id12">
+<img alt="_images/union.png" src="_images/union.png" />
 <p class="caption"><span class="caption-text">union of a cube with a sphere</span></p>
 </div>
 <ul class="simple">
 <li>Difference, subtracts the second part from the first part, it&#8217;s order sensitive.</li>
 </ul>
-<div class="figure" id="id16">
-<img alt="_static/difference.png" src="_static/difference.png" />
+<div class="figure" id="id13">
+<img alt="_images/difference.png" src="_images/difference.png" />
 <p class="caption"><span class="caption-text">difference of a cube with a sphere</span></p>
-</div>
-<div class="figure" id="id17">
-<img alt="_static/difference1.png" src="_static/difference1.png" />
-<p class="caption"><span class="caption-text">difference of a sphere with a cube</span></p>
 </div>
 <ul class="simple">
 <li>Intersection, returns only the overlap of both shapes.</li>
 </ul>
-<div class="figure" id="id18">
-<img alt="_static/intersection.png" src="_static/intersection.png" />
+<div class="figure" id="id14">
+<img alt="_images/intersection.png" src="_images/intersection.png" />
 <p class="caption"><span class="caption-text">intersection of a cube with a sphere</span></p>
 </div>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RWke0fLcbCo" frameborder="0" allowfullscreen></iframe></div>
 <div class="section" id="using-the-scale-block">
 <h2>Using the scale block<a class="headerlink" href="#using-the-scale-block" title="Permalink to this headline">¶</a></h2>
 </div>
