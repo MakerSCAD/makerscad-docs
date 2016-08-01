@@ -51,7 +51,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'ScratchyCAD'
-copyright = u'2016, Luis Arturo Pacheco'
+copyright = u'2016, ScratchyCAD'
 author = u'Luis Arturo Pacheco'
 
 # The version info for the project you're documenting, acts as replacement for

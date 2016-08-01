@@ -5,84 +5,74 @@
 The CAD blocks
 ***************
 
-.. _main:
+.. _basicscene:
 
-Using the main block
+The basic scene
 =============================
 
-The most important block in ScratchyCAD is the main block, this block is a function that returns what to draw on our canvas.
-this can be found under the CAD/Tools library.
+In order to start creating a 3D world we first need to set up a scene, in ScratchyCAD we have preloaded a basic scene that comes with some basic lightning, material and shadow presets.
+The basic scene can be found in the block library under the CAD/Tools section.
 
 It looks like this:
 
-.. figure:: /_static/mainblock.png
+.. figure:: /_static/images/CAD/newbasicscene.png
 
-      the main block.
+      the basic scene block.
+
+Go ahead and add a new basic scene to our workspace, right now it is an empty scene that we need to start adding objects to it in order to build our world.
+
+.. _sceneadd:
+
+Next  we have the scene.add block, this allows us to add an object to our scene objects include shapes, geometries, lights and more go ahead and take the scene.add block and plug it under the basic scene block.
 
 
-This means that everything you plug in this block is going to get drawn in the 3D space
-You can plug in any block from the Parts library test for yourself:
+.. figure:: /_static/images/CAD/sceneadd.png
 
-.. figure:: /_static/ex1.png
+      adding objects to our scene.
 
-      using the main block
+By default the add.scene block comes preloaded with a cube, go ahead and press the DRAW button! he have succesfully added our first object to our scene.
 
-.. _cube:
+.. figure:: /_static/images/CAD/firstscene.png
 
-Using the cube block
+
+Now that we know how to add objects to our world lets look at some of them:
+
+.. _box:
+
+The Box
 =============================
 
-The Cube, cubes in ScratchyCAD can have different lenghts on each of their sides.
-The cube is found under the CAD/parts library
-Go on and grab the cube block and plug it to the main block.
-this is the ScratchyCAD default cube that measures 1x1x1 units.
+The box geometry is found under the CAD/parts library
+Go on and grab the cube block and plug it to the scene.add block.
 
-.. figure:: /_static/defaultcube.png
+this is the ScratchyCAD default box that measures 100x100x100 units.
 
-      ScratchyCAD's default cube
+.. figure:: /_static/images/CAD/box.png
 
-
+      ScratchyCAD's default box
 
 The first parameter in the cube is asking for a size XYZ, for every parameter in ScratchyCAD
 that asks for XYZ we need to plug in a special block that contains a list of three numbers
-one for lenght (x), width (y) and height (z).
-for now grab a xyz block from the lists library and plug it to the cube block.
+one for lenght (x), one for width (y) and one for height (z).
+For now grab lets use the preset and change the values on the  x,y,z inputs. Activate the Auto checkbox on the left right corner and see how each value affects the box.
 
-.. figure:: /_static/defaultcubelist.png
+.. raw:: html
 
-      xyz block in the Lists ibrary
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fk36lQ92Us4" frameborder="0" allowfullscreen></iframe>
 
-.. figure:: /_static/defaultcubelist1.png
+Under the Lists find the Vertical XYZ block this block will allow us to change the values to formulas or even variables.
 
-      xyz plugged to the cube block
+.. figure:: /_static/images/lists/XYZlist.png
 
 Now we have a list we only need to get some values. Under the math library look for the first block that
-contains a value of 0, this is a number block and you guessed right, it returns the value that the user types on it.
-Go ahead and grab three number blocks for each of the xyz inputs. Try different numbers out,
-remember to click on DRAW every time.
+contains a value of 0, this is a number block, it returns the value that the user types on it, or the variable that's connected to it.
+Go ahead and grab three number blocks for each of the xyz inputs. Try different numbers, formulas or variables out,
+remember to turn on the AUTO in order to see the changes as you type.
 
-.. figure:: /_static/cubenumber.png
+.. raw:: html
 
-      the number block.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/4T0fzvv9g5E" frameborder="0" allowfullscreen></iframe>
 
-.. figure:: /_static/cubenumber1.png
-
-      testing values on the cube xyz input.
-
-The rounded value has two options true or false if true it will add a bevel on the sides of our cube,
-the resolution will define the segments on the bevel and the radius will define the size of it.
-
-.. warning::
-
-   - **The radius can not be equal or larger than half of any of our size xyz values**.
-
-.. figure:: /_static/cuberounded.png
-
-      testing values on the resolution and radius.
-
-.. figure:: /_static/cubeblock.png
-
-      The cube block.
 
 .. _sphere:
 
@@ -91,28 +81,17 @@ Using the sphere block
 
 The sphere block can be found under the CAD/Parts library.
 
-.. figure:: /_static/sphereblock.png
+.. figure:: /_static/images/CAD/sphere.png
 
       the default sphere block.
 
-The sphere has three parameters:
+The sphere has two parameters:
       * Diameter, a numeric value and defines the size of the sphere
       * Resolution, a numeric value that defines the number of poligons that make the shape
-      * Icosphere , defines if the shpere should be drawn as a polyhedron, all sides will be identical triangles.
 
-.. figure:: /_static/sphere.png
+.. raw:: html
 
-      a false value returns a sphere.
-
-.. figure:: /_static/icosphere.png
-
-      a true value returns a polyhedron
-
-.. figure:: /_static/sphereblock1.png
-
-      the sphere block
-
-
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eMlpUuBv_ZI" frameborder="0" allowfullscreen></iframe>
 
 .. _cylinder:
 
@@ -121,37 +100,46 @@ Using the cylinder block
 
 The cylinder block can be found under the CAD/Parts library.
 
-.. figure:: /_static/cylinder.png
+.. figure:: /_static/images/CAD/cylinder.png
 
       the default cylinder block.
 
-This block has five parameters:
+This block has four parameters:
 
       * Diameter1, a numeric value that defines the size of the lower base.
       * Diameter2, a numeric value that defines the size of the upper base.
       * Height, a numeric value that defines how tall is the cylinder.
-      * Rounded, defines if the cylinder should be drawn with rounded caps instead of flat faces.
       * Sides, a numeric value that defines how many sides our prism will have.
 
-.. figure:: /_static/cylinder1.png
+.. raw:: html
 
-      a cylinder with equal diameters and five sides.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-xV4dONH3Dg" frameborder="0" allowfullscreen></iframe>
 
-.. figure:: /_static/cylinder2.png
 
-      a cylinder with larger diameter2 and eight sides.
+.. _torus:
 
-.. figure:: /_static/cylinder3.png
+Using the torus block
+=============================
 
-      a cylinder with a larger diameter1 and eight sides.
+A torus is a Donut shaped mesh, defined as a revolving circle in an axis coplanar with the circle.
 
-.. figure:: /_static/pyramid.png
+The torus is found in the CAD/Parts library.
 
-      a pyramid can be made with a size zero diameter2.
+.. figure:: /_static/images/CAD/torus.png
 
-.. figure:: /_static/cylinder4.png
+      the default torus block.
 
-      activating the rounded parameter duplicates the value of the diameter1 in diameter2.
+The torus has five parameters:
+
+    * diameter, a numeric value that defines the torus radius.
+    * tube diameter, a numeric value that defines how thick is the ring.
+    * radial segments, a numeric value that defines how many "sides" the section of the torus will have.
+    * tubular segments, a numeric value that defines the how many "sides" the torus itself will have.
+    * arc angle, a numeric value that defines if we only what a partial part of the torus.
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/px-Q_1qOajM" frameborder="0" allowfullscreen></iframe>
 
 .. _polygon:
 
@@ -213,10 +201,8 @@ The 3Dtext block can be found under the CAD/Parts library.
 It allows us to create a text based model, this block has the following main parameters:
 
   * text : a string value with the characters we are going to draw.
-  * width: a numeric value that determines the thickness of the characters.
+  * size: a numeric value that determines the thickness of the characters.
   * height:  a numeric value that determines the extrusion amount of the characters.
-  * x: a numeric value, the starting point on X for the characters.
-  * y: a numeric value, the starting point on y for the characters.
 
 .. figure:: /_static/text3d.png
 
@@ -228,8 +214,8 @@ It allows us to create a text based model, this block has the following main par
 Using the part block
 =============================
 
-It's nice to be able to return different shapes, but most objects in real world are a mix
-of different shapes. Thats the what the Part  block is for! this one is found under the
+It's nice to be able to return different basic shapes, but most objects in real world are a mix
+of different shapes that create a complex shape. Thats the what the Part  block is for! this one is found under the
 CAD/tools library
 
 .. figure:: /_static/ex2.png
