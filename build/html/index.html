@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to ScratchyCAD’s documentation! &mdash; ScratchyCAD LP 0.0.2 Alpha documentation</title>
+  <title>ScratchyCAD Reference Manual &mdash; ScratchyCAD LP 0.0.2 Alpha documentation</title>
   
 
   
@@ -82,7 +82,10 @@
             
                 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CAD.html">The CAD blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CAD.html">CAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="program.html">Programming tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
 </ul>
 
             
@@ -113,7 +116,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="#">Docs</a> &raquo;</li>
       
-    <li>Welcome to ScratchyCAD&#8217;s documentation!</li>
+    <li>ScratchyCAD Reference Manual</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -127,8 +130,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-scratchycad-s-documentation">
-<h1>Welcome to ScratchyCAD&#8217;s documentation!<a class="headerlink" href="#welcome-to-scratchycad-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="scratchycad-reference-manual">
+<h1>ScratchyCAD Reference Manual<a class="headerlink" href="#scratchycad-reference-manual" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="welcome-to-scratchycad-s-documentation">
+<h2>Welcome to ScratchyCAD&#8217;s documentation!<a class="headerlink" href="#welcome-to-scratchycad-s-documentation" title="Permalink to this headline">¶</a></h2>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -137,33 +142,45 @@
 <li class="toctree-l2"><a class="reference internal" href="getting_started.html#the-scratchycad-interface">The ScratchyCAD interface</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="CAD.html">The CAD blocks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#the-basic-scene">The basic scene</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#the-box">The Box</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-sphere-block">Using the sphere block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-cylinder-block">Using the cylinder block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-torus-block">Using the torus block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-polygon-block">Using the polygon block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-text3d-block">Using the text3D block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-part-block">Using the part block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-scale-block">Using the scale block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-rotate-block">Using the rotate block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-translate-block">Using the translate block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-setcolor-block">Using the setColor block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#using-the-extrude-block">Using the extrude block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="CAD.html#making-a-parametric-block">Making a parametric block</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CAD.html">CAD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cad/scene.html">Scene tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html">Shapes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/transform.html">Transforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/lights.html">Lights</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/materials.html">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/animation.html">Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/interaction.html">Interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/physics.html">Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/camera.html">Camera</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/particles.html">Particles</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="program.html">Programming tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="program.html#logic-blocks">Logic Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="program.html#loop-blocks">Loop Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="program.html#math-blocks">Math Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="program.html#text-blocks">Text Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="program.html#list-blocks">List Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="program.html#map-blocks">Map Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="program.html#color-blocks">Color Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="program.html#variable-blocks">Variable Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="program.html#function-blocks">Function Blocks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="program.html#the-advancedjs-blocks">The AdvancedJS Blocks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
 </ul>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
 <li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
 <li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
 </ul>
+</div>
 </div>
 
 
