@@ -4,3 +4,8 @@
 ***************
 Animation
 ***************
+
+.. animationLoop_:
+
+Animation loop
+=============================

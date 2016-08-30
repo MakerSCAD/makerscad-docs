@@ -42,3 +42,22 @@ By default the add.scene block comes preloaded with a cube, go ahead and press t
 Now that we know how to add objects to our world lets look at some of them:
 
 .. note:: the add scene block in photorealistic mode, needs lights to work.
+
+.. _newGroup:
+
+New group
+=============================
+
+.. _objectAdd:
+
+Object add
+=============================
+
+.. _objectLoader:
+
+Object loader
+=============================
+
+.. _textureLoader:
+Texture loader
+=============================
