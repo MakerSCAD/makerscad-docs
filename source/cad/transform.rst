@@ -8,7 +8,7 @@ Transforms
 
 .. translate_:
 
-Using the translate block
+Translate
 =============================
 
 Translating an object is the same as moving it, plug in an object and set the amount of units you want to move that object to position it where you need it.
@@ -26,7 +26,7 @@ The translation block can be found under the CAD/Transform menu.
 
 .. scale_:
 
-Using the scale block
+Scale
 =============================
 
 .. raw:: html
@@ -35,7 +35,7 @@ Using the scale block
 
 .. rotate_:
 
-Using the rotate block
+Rotate
 =============================
 
 .. raw:: html
@@ -44,7 +44,7 @@ Using the rotate block
 
 .. setColor_:
 
-Using the setColor block
+Set color
 =============================
 
 .. raw:: html
@@ -53,7 +53,7 @@ Using the setColor block
 
 .. setColor_:
 
-Using the setTexture block
+Set texture
 =============================
 
 .. raw:: html
@@ -63,7 +63,7 @@ Using the setTexture block
 
 .. extrude_:
 
-Using the extrude block
+Extrude
 =============================
 
 .. raw:: html
@@ -72,7 +72,7 @@ Using the extrude block
 
 .. lathe:
 
-Using the lathe block
+Lathe
 =============================
 
 .. raw:: html
@@ -81,9 +81,12 @@ Using the lathe block
 
 .. lathe:
 
-Using the path block
+Path
 =============================
 
 .. raw:: html
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/rq0hnwGfvm8" frameborder="0" allowfullscreen></iframe>
+
+Clone
+=============================

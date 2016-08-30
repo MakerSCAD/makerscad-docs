@@ -55,5 +55,5 @@ Function Blocks
 
 .. _advancedjs:
 
-The AdvancedJS Blocks
+AdvancedJS Blocks
 =============================

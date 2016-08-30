@@ -44,7 +44,7 @@ remember to turn on the AUTO in order to see the changes as you type.
 
 .. _sphere:
 
-Using the sphere block
+The sphere
 =============================
 
 The sphere block can be found under the CAD/Parts library.
@@ -63,7 +63,7 @@ The sphere has two parameters:
 
 .. _cylinder:
 
-Using the cylinder block
+The cylinder
 =============================
 
 The cylinder block can be found under the CAD/Parts library.
@@ -86,7 +86,7 @@ This block has four parameters:
 
 .. _torus:
 
-Using the torus block
+The torus
 =============================
 
 A torus is a Donut shaped mesh, defined as a revolving circle in an axis coplanar with the circle.
@@ -111,7 +111,7 @@ The torus has five parameters:
 
 .. _polygon:
 
-Using the polygon block
+The polygon
 =============================
 
 The polygon block defines a 2D shape, this shape is given by a list of  at least three points or vertices.
@@ -160,7 +160,7 @@ Once we are done setting up the points for our shape click close and they will b
 .. _text3D:
 
 
-Using the text3D block
+The text3D
 =============================
 
 The 3Dtext block can be found under the CAD/Parts library.
@@ -183,7 +183,7 @@ It allows us to create a text based model, this block has the following main par
 
 .. _part:
 
-Using the part block
+The part block
 =============================
 
 It's nice to be able to return different basic shapes, but most objects in real world are a mix
