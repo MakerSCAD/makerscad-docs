@@ -1,5 +1,5 @@
-CC-BY-NC-SA
+MakerSCAD documentation github
 
-MakersCAD documentation github
+-MakerSCAD documentation is Licenced under a CC-BY-NC-SA
 
--to learn more about MakersCAD visit www.MakersCAD.com
+-to learn more about MakerSCAD visit www.makerscad.com
