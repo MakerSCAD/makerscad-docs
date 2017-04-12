@@ -1,12 +1,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  ScratchyCAD Reference Manual
+  MakersCAD Reference Manual
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-.. ScratchyCAD documentation master file, created by
+.. MakersCAD documentation master file, created by
    sphinx-quickstart on Tue Mar  8 01:24:32 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ScratchyCAD's documentation!
+Welcome to MakersCAD's documentation!
 =======================================
 
 Contents:

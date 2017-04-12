@@ -1,6 +1,5 @@
 CC-BY-NC-SA
 
-ScratchyCAD documentation github
+MakersCAD documentation github
 
--to learn more about scratchycad visit www.scratchycad.com
-
+-to learn more about MakersCAD visit www.MakersCAD.com

@@ -7,29 +7,29 @@ Getting started
 
 .. _opening:
 
-Opening ScratchyCAD
+Opening MakersCAD
 =============================
 
-First go ahead and visit `ScratchyCAD <http://scratchycad.com/>`_
+First go ahead and visit `MakersCAD <http://MakersCAD.com/>`_
 remember this is an early Alpha testing version expect the following things to happen:
 
 * Things might break.
 * Current version might lose compatibility with future versions.
 * Chrome and Chrominium web browsers are supported for now.
-* ScratchyCAD and its documentation are under heavy development things will change!
+* MakersCAD and its documentation are under heavy development things will change!
 
 If you find any bugs and want to help us out send us an email at::
 
-  info@scratchycad.com
+  info@MakersCAD.com
 
 .. _interface:
 
-The ScratchyCAD interface
+The MakersCAD interface
 =============================
 
 .. figure:: /_static/images/gettingstarted/ui.png
 
-    The ScratchyCAD UI
+    The MakersCAD UI
 
 First, we have the main toolbar
 
@@ -48,8 +48,8 @@ Here you can:
 * EXPORT the current 3d objects as a STL file.
 * EXPORT the current 3d objects as an OBJ file.
 * LOAD an asset (experimental).
-* Confifure ScratchyCAD on the SETTINGS window.
-* Go to the Documentation to get HELP learning scratchycad
+* Confifure MakersCAD on the SETTINGS window.
+* Go to the Documentation to get HELP learning MakersCAD
 * Check the ABOUT window for authors, copyright licence and more.
 
 Under the main toolbar at the left side is Work view

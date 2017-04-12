@@ -4,7 +4,7 @@
   CAD
 ##############
 
-ScratchyCAD provides with CAD (Computer-Aided-Design) blocks.
+MakersCAD provides with CAD (Computer-Aided-Design) blocks.
 
 They will help you create your 3d world and objects.
 

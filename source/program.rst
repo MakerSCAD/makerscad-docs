@@ -4,7 +4,7 @@
   Programming tools
 ##########################
 
-ScratchyCAD provides with some programming tools blocks.
+MakersCAD provides with some programming tools blocks.
 
 They will help you create automate and define your objects parameters.
 
