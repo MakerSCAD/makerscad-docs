@@ -1,6 +1,6 @@
-CC-BY-NC-SA
+MakerSCAD documentation github
+MakerSCAD documentation is Licenced under a CC-BY-NC-SA 
 
-ScratchyCAD documentation github
 
--to learn more about scratchycad visit www.scratchycad.com
+-to learn more about MakerSCAD visit www.makerscad.com
 
