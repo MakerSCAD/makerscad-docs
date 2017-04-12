@@ -8,9 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CAD &mdash; ScratchyCAD LP 0.0.2 Alpha documentation</title>
+  <title>CAD &mdash; MakerSCAD 0.5.2 Alpha documentation</title>
   
 
+  
+  
   
   
 
@@ -30,7 +32,10 @@
   
 
   
-    <link rel="top" title="ScratchyCAD LP 0.0.2 Alpha documentation" href="index.html"/>
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="MakerSCAD 0.5.2 Alpha documentation" href="index.html"/>
         <link rel="next" title="Scene tools" href="cad/scene.html"/>
         <link rel="prev" title="Getting started" href="getting_started.html"/> 
 
@@ -41,6 +46,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -50,7 +56,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> ScratchyCAD
+            <a href="index.html" class="icon icon-home"> MakerSCAD
           
 
           
@@ -60,7 +66,7 @@
             
             
               <div class="version">
-                LP 0.0.2 Alpha
+                0.5.2 Alpha
               </div>
             
           
@@ -81,7 +87,10 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">CAD</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="cad/scene.html">Scene tools</a></li>
@@ -111,8 +120,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">ScratchyCAD</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MakerSCAD</a>
+        
       </nav>
 
 
@@ -121,23 +132,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>CAD</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>CAD</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/CAD.txt" rel="nofollow"> View page source</a>
+            
+            <a href="_sources/CAD.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -145,40 +173,68 @@
             
   <div class="section" id="cad">
 <span id="id1"></span><h1>CAD<a class="headerlink" href="#cad" title="Permalink to this headline">¶</a></h1>
-<p>ScratchyCAD provides with CAD (Computer-Aided-Design) blocks.</p>
+<p>MakersCAD provides with CAD (Computer-Aided-Design) blocks.</p>
 <p>They will help you create your 3d world and objects.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="cad/scene.html">Scene tools</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="cad/scene.html#the-basic-scene">The basic scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/scene.html#new-group">New group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/scene.html#object-add">Object add</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/scene.html#object-loader">Object loader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/scene.html#texture-loader">Texture loader</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cad/shapes.html">Shapes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#the-box">The Box</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#using-the-sphere-block">Using the sphere block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#using-the-cylinder-block">Using the cylinder block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#using-the-torus-block">Using the torus block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#using-the-polygon-block">Using the polygon block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#using-the-text3d-block">Using the text3D block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#using-the-part-block">Using the part block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#the-sphere">The sphere</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#the-cylinder">The cylinder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#the-torus">The torus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#the-polygon">The polygon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#the-text3d">The text3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/shapes.html#the-part-block">The part block</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="cad/transform.html">Transforms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#using-the-translate-block">Using the translate block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#using-the-scale-block">Using the scale block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#using-the-rotate-block">Using the rotate block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#using-the-setcolor-block">Using the setColor block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#using-the-settexture-block">Using the setTexture block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#using-the-extrude-block">Using the extrude block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#using-the-lathe-block">Using the lathe block</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#using-the-path-block">Using the path block</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#translate">Translate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#scale">Scale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#rotate">Rotate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#extrude">Extrude</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#lathe">Lathe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#path">Path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/transform.html#clone">Clone</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="cad/lights.html">Lights</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cad/materials.html">Materials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cad/animation.html">Animation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cad/lights.html">Lights</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cad/lights.html#shadow-map-enable">Shadow map enable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/lights.html#ambient-light">Ambient Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/lights.html#directional-light">Directional light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/lights.html#hemisphere-light">Hemisphere light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/lights.html#point-light">Point Light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/lights.html#spot-light">Spot light</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/lights.html#set-shadow">Set shadow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/lights.html#set-light-shadow">Set light shadow</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cad/materials.html">Materials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cad/materials.html#set-color">Set color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/materials.html#set-texture">Set texture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/materials.html#set-material">Set material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/materials.html#basic-material">Basic material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/materials.html#lambert-material">Lambert material</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/materials.html#phong-material">Phong material</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cad/animation.html">Animation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cad/animation.html#animation-loop">Animation loop</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="cad/interaction.html">Interaction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cad/physics.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cad/physics.html">Physics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cad/physics.html#basic-physi-scene">Basic physi scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cad/physics.html#physi-material">Physi material</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="cad/camera.html">Camera</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cad/particles.html">Particles</a></li>
 </ul>
@@ -187,15 +243,18 @@
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="cad/scene.html" class="btn btn-neutral float-right" title="Scene tools" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="cad/scene.html" class="btn btn-neutral float-right" title="Scene tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="getting_started.html" class="btn btn-neutral" title="Getting started" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="getting_started.html" class="btn btn-neutral" title="Getting started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -204,7 +263,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, ScratchyCAD.
+        &copy; Copyright 2016, MakerSCAD.
 
     </p>
   </div>
@@ -226,10 +285,11 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'LP 0.0.2 Alpha',
+            VERSION:'0.5.2 Alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

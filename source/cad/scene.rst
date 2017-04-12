@@ -59,5 +59,6 @@ Object loader
 =============================
 
 .. _textureLoader:
+
 Texture loader
 =============================

@@ -10,17 +10,18 @@ Getting started
 Opening MakersCAD
 =============================
 
-First go ahead and visit `MakersCAD <http://MakersCAD.com/>`_
-remember this is an early Alpha testing version expect the following things to happen:
+First go ahead and visit `MakersCAD <http://MakersCAD.com/>`_ and get your copy of MakerSCAD.
+
+.. warning::
+  Remember this is an early Alpha testing version expect the following things to happen:
 
 * Things might break.
 * Current version might lose compatibility with future versions.
-* Chrome and Chrominium web browsers are supported for now.
 * MakersCAD and its documentation are under heavy development things will change!
 
 If you find any bugs and want to help us out send us an email at::
 
-  info@MakersCAD.com
+  hello@MakersCAD.com
 
 .. _interface:
 

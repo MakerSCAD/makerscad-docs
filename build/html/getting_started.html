@@ -8,9 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Getting started &mdash; ScratchyCAD LP 0.0.2 Alpha documentation</title>
+  <title>Getting started &mdash; MakerSCAD 0.5.2 Alpha documentation</title>
   
 
+  
+  
   
   
 
@@ -30,9 +32,12 @@
   
 
   
-    <link rel="top" title="ScratchyCAD LP 0.0.2 Alpha documentation" href="index.html"/>
-        <link rel="next" title="The CAD blocks" href="CAD.html"/>
-        <link rel="prev" title="Welcome to ScratchyCAD’s documentation!" href="index.html"/> 
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="MakerSCAD 0.5.2 Alpha documentation" href="index.html"/>
+        <link rel="next" title="CAD" href="CAD.html"/>
+        <link rel="prev" title="MakersCAD Reference Manual" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -41,6 +46,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -50,7 +56,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> ScratchyCAD
+            <a href="index.html" class="icon icon-home"> MakerSCAD
           
 
           
@@ -60,7 +66,7 @@
             
             
               <div class="version">
-                LP 0.0.2 Alpha
+                0.5.2 Alpha
               </div>
             
           
@@ -81,13 +87,19 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#opening-scratchycad">Opening ScratchyCAD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-scratchycad-interface">The ScratchyCAD interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#opening-makerscad">Opening MakersCAD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-makerscad-interface">The MakersCAD interface</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="CAD.html">The CAD blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CAD.html">CAD</a></li>
+<li class="toctree-l1"><a class="reference internal" href="program.html">Programming tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
 </ul>
 
             
@@ -100,8 +112,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">ScratchyCAD</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MakerSCAD</a>
+        
       </nav>
 
 
@@ -110,23 +124,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Getting started</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Getting started</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/getting_started.txt" rel="nofollow"> View page source</a>
+            
+            <a href="_sources/getting_started.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -134,26 +165,28 @@
             
   <div class="section" id="getting-started">
 <span id="id1"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="opening-scratchycad">
-<span id="opening"></span><h2>Opening ScratchyCAD<a class="headerlink" href="#opening-scratchycad" title="Permalink to this headline">¶</a></h2>
-<p>First go ahead and visit <a class="reference external" href="http://scratchycad.com/">ScratchyCAD</a>
-remember this is an early Alpha testing version expect the following things to happen:</p>
+<div class="section" id="opening-makerscad">
+<span id="opening"></span><h2>Opening MakersCAD<a class="headerlink" href="#opening-makerscad" title="Permalink to this headline">¶</a></h2>
+<p>First go ahead and visit <a class="reference external" href="http://MakersCAD.com/">MakersCAD</a> and get your copy of MakerSCAD.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">remember this is an early Alpha testing version expect the following things to happen:</p>
+</div>
 <ul class="simple">
 <li>Things might break.</li>
 <li>Current version might lose compatibility with future versions.</li>
-<li>Chrome and Chrominium web browsers are supported for now.</li>
-<li>ScratchyCAD and its documentation are under heavy development things will change!</li>
+<li>MakersCAD and its documentation are under heavy development things will change!</li>
 </ul>
 <p>If you find any bugs and want to help us out send us an email at:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">info</span><span class="nd">@scratchycad</span><span class="o">.</span><span class="n">com</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">hello</span><span class="nd">@MakersCAD</span><span class="o">.</span><span class="n">com</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="the-scratchycad-interface">
-<span id="interface"></span><h2>The ScratchyCAD interface<a class="headerlink" href="#the-scratchycad-interface" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-makerscad-interface">
+<span id="interface"></span><h2>The MakersCAD interface<a class="headerlink" href="#the-makerscad-interface" title="Permalink to this headline">¶</a></h2>
 <div class="figure" id="id2">
 <img alt="_images/ui.png" src="_images/ui.png" />
-<p class="caption"><span class="caption-text">The ScratchyCAD UI</span></p>
+<p class="caption"><span class="caption-text">The MakersCAD UI</span></p>
 </div>
 <p>First, we have the main toolbar</p>
 <div class="figure">
@@ -171,8 +204,8 @@ remember this is an early Alpha testing version expect the following things to h
 <li>EXPORT the current 3d objects as a STL file.</li>
 <li>EXPORT the current 3d objects as an OBJ file.</li>
 <li>LOAD an asset (experimental).</li>
-<li>Confifure ScratchyCAD on the SETTINGS window.</li>
-<li>Go to the Documentation to get HELP learning scratchycad</li>
+<li>Confifure MakersCAD on the SETTINGS window.</li>
+<li>Go to the Documentation to get HELP learning MakersCAD</li>
 <li>Check the ABOUT window for authors, copyright licence and more.</li>
 </ul>
 <p>Under the main toolbar at the left side is Work view</p>
@@ -185,7 +218,7 @@ remember this is an early Alpha testing version expect the following things to h
 <p class="caption"><span class="caption-text">The block library</span></p>
 </div>
 <ul class="simple">
-<li><a class="reference internal" href="CAD.html#cad"><span class="std std-ref">The CAD blocks</span></a>, Special blocks related to shapes, objects and parts.</li>
+<li><a class="reference internal" href="CAD.html#cad"><span class="std std-ref">CAD</span></a>, Special blocks related to shapes, objects and parts.</li>
 <li>Logic</li>
 <li>Loops</li>
 <li>Math</li>
@@ -260,15 +293,18 @@ remember this is an early Alpha testing version expect the following things to h
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="CAD.html" class="btn btn-neutral float-right" title="The CAD blocks" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="CAD.html" class="btn btn-neutral float-right" title="CAD" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Welcome to ScratchyCAD’s documentation!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="MakersCAD Reference Manual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -277,7 +313,7 @@ remember this is an early Alpha testing version expect the following things to h
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, ScratchyCAD.
+        &copy; Copyright 2016, MakerSCAD.
 
     </p>
   </div>
@@ -299,10 +335,11 @@ remember this is an early Alpha testing version expect the following things to h
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'LP 0.0.2 Alpha',
+            VERSION:'0.5.2 Alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
