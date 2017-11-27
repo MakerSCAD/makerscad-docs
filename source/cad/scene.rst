@@ -63,7 +63,7 @@ Object add
 When you declare variable as a group, you can use a special block called "object add".
 .. figure:: ../_static/images/CAD/varadd.png
 
- in the previous section, we created a variable as a group, now go to tools and select the block that says "Var1.add"
+in the previous section, we created a variable as a group, now go to tools and select the block that says "Var1.add"
 Change the word "var1" for the name you used in your variable and snap a new part to it, for this example we will use a torus.
 
 Now add another "var1.add" block, use the same variable name you declared before, snap a sphere to it.
