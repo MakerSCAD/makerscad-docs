@@ -49,7 +49,7 @@ Here you can:
 * EXPORT the current 3d objects as a STL file.
 * EXPORT the current 3d objects as an OBJ file.
 * LOAD an asset (experimental).
-* Confifure MakersCAD on the SETTINGS window.
+* Configure MakersCAD on the SETTINGS window.
 * Go to the Documentation to get HELP learning MakersCAD
 * Check the ABOUT window for authors, copyright licence and more.
 
@@ -64,15 +64,18 @@ Here we have the block library.
     The block library
 
 * :ref:`cad`, Special blocks related to shapes, objects and parts.
-* Logic
-* Loops
-* Math
-* Text
-* Lists
-* Color
-* Variables
-* Functions
-* Library
+* Logic: blocks related to logical operations, like comparison operators, conditional and boolean values (true/false).
+* Loops: blocks for mathematical functions.
+* Math: blocks for mathematical functions.
+* Text: blocks for output, formatting and search operations with text strings.
+* Lists: This section contain tools that allows the creation of object groups and search specific elements in them. 
+* Color: Blocks for coloring objects.
+* Advanced js: These blocks can be used to write your own javascript code or import js files.
+* Parameters ui: Blocks to enhance the GUI.
+* IoT: Blocks to include connection to external webservices, invoke them, as well as send and receive parameters and messages with them in order to design IoT gadgets. 
+* Variables: Blocks to create programming variables and assign values to them.
+* Functions: Blocks to declare and invoke functions.
+* Library: Examples to experiment with.
 
 and the block workspace where we will be creating our 3D world.
 
@@ -92,7 +95,7 @@ Some useful controls for our block workspace:
       Mouse wheel up or down
 
 
-On the Left side at the the top theres our 3D view, where we can se a preview of our world.
+On the Left side at the the top theres our 3D view, where we can see a preview of our world.
 
 .. figure:: /_static/images/gettingstarted/3dview.png
 
