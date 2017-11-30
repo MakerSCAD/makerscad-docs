@@ -10,7 +10,7 @@ Scene tools
 The basic scene
 =============================
 
-In order to start creating a 3D world we first need to set up a scene, in ScratchyCAD we have preloaded a basic scene that comes with some basic lightning, material and shadow presets.
+In order to start creating a 3D world we first need to set up a scene, in MakerSCAD we have preloaded a basic scene that comes with some basic lightning, material and shadow presets.
 The basic scene can be found in the block library under the CAD/Tools section.
 
 It looks like this:
@@ -48,11 +48,11 @@ Now that we know how to add objects to our world lets look at some of them:
 New group
 =============================
 
-In MakerScad , you can group objects by declaring group variables, to do this, you can use the "New group" block
+In MakerSCAD , you can group objects by declaring group variables, to do this, you can use the "New group" block
 
 .. figure:: ../_static/images/CAD/newgroup.png
 
-First go to "Variables and select the "var" block, then go to the "Tools" section and select a "New Goup" block, snap the new group to the variable
+First go to "Variables" and select the "var" block, then go to the "Tools" section and select a "New Goup" block, snap the new group to the variable
 
 .. figure:: ../_static/images/CAD/groupvariable.png
 
@@ -60,7 +60,8 @@ First go to "Variables and select the "var" block, then go to the "Tools" sectio
 
 Object add
 =============================
-When you declare variable as a group, you can use a special block called "object add".
+When you declare a variable as a group, you can use a special block called "object add".
+
 .. figure:: ../_static/images/CAD/varadd.png
 
 in the previous section, we created a variable as a group, now go to tools and select the block that says "Var1.add"
@@ -103,7 +104,7 @@ Use a texture loader to load image resources as textures, to add a texture loade
 
 
 
-.. figure:: ../_static/images/CAD/loadedtexture.png
+.. figure:: ../_static/images/CAD/textureloader.png
 
 Once you have an object loader in your workspace, click on the gear icon to open a file selection window, if you want to load a file from your PC click the "load" button" and browse your PC for an OBJ or STL file.
 Also you can enter or paste an URL in the text box and then click the "load url" button to load from a web location.
