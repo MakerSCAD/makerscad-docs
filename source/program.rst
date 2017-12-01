@@ -29,10 +29,6 @@ in the generated code yu can see that instead of "if" and "else" words it uses "
 
 .. figure:: /_static/images/CAD/ternary.png
 
-logic operators
-
-boolean values true/false
-
 .. _loops:
 
 Loop Blocks
