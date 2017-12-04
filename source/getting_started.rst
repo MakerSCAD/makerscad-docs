@@ -5,12 +5,12 @@
 Getting started
 ***************
 
-.. _opening:
+.. _install:
 
-Opening MakersCAD
+Downloading and installing MakersCAD
 =============================
 
-First go ahead and visit `MakersCAD <http://MakersCAD.com/>`_ and get your copy of MakerSCAD.
+MakerSCAD can be installed for Windows, Linux and MacOS, in order to download your copy go to `MakersCAD Website <http://MakersCAD.com/>`_
 
 .. warning::
   Remember this is an early Alpha testing version expect the following things to happen:
@@ -22,6 +22,39 @@ First go ahead and visit `MakersCAD <http://MakersCAD.com/>`_ and get your copy 
 If you find any bugs and want to help us out send us an email at::
 
   hello@MakersCAD.com
+
+The site has the option to try MakerSCAD online, but we strongly recommend to install the software on your computer, to do that click on "I WANT THIS!"
+
+.. figure:: /_static/images/setup/makerscad_com.png
+
+Enter your email address, name, and company in the form as shown in the picture
+
+.. figure:: /_static/images/setup/iwantthis.png
+
+Pay what you want for MakerScad, that means that you decide how much the product is worth, so, enter the quantity you consider as a fair price and click on the button to proceed
+
+.. figure:: /_static/images/setup/makerscadregister.png
+
+Go to view product and download the latest version for your operating system
+
+.. figure:: /_static/images/setup/viewproduct.png
+
+in windows simply click on the nstaller and it will install the software
+
+in linux open a terminal, go to the folder where the installer is located and type the following: ::
+
+	~$ chmod a+x makerscad-alpha-0.6.0-x86_64.AppImage
+
+Then you will see this message, accept to make the file excecutable
+
+.. figure:: /_static/images/setup/install.png
+
+.. _opening:
+
+Opening MakersCAD
+=============================
+
+First go ahead and visit `MakersCAD <http://MakersCAD.com/>`_ and get your copy of MakerSCAD.
 
 .. _interface:
 

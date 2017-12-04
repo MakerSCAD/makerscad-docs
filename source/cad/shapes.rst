@@ -13,7 +13,7 @@ The Box
 The box geometry is found under the CAD/parts library
 Go on and grab the cube block and plug it to the scene.add block.
 
-this is the ScratchyCAD default box that measures 100x100x100 units.
+this is the MakerSCAD default box that measures 100x100x100 units.
 
 .. figure:: ../_static/images/CAD/box.png
 
