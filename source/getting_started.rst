@@ -27,11 +27,11 @@ The site has the option to try MakerSCAD online, but we strongly recommend to in
 
 .. figure:: /_static/images/setup/makerscad_com.png
 
-Enter your email address, name, and company in the form as shown in the picture
+Enter your email address, name, and company in the form as shown in the picture.
 
 .. figure:: /_static/images/setup/iwantthis.png
 
-Pay what you want for MakerScad, that means that you decide how much the product is worth, so, enter the quantity you consider as a fair price and click on the button to proceed
+Pay what you want for MakerScad, that means that you decide how much the product is worth, so, enter the quantity you consider as a fair price and click on the button to proceed.
 
 .. figure:: /_static/images/setup/makerscadregister.png
 
@@ -39,7 +39,7 @@ Go to view product and download the latest version for your operating system
 
 .. figure:: /_static/images/setup/viewproduct.png
 
-in windows simply click on the nstaller and it will install the software
+in windows simply click on the installer and it will install the software
 
 in linux open a terminal, go to the folder where the installer is located and type the following: ::
 
@@ -102,13 +102,14 @@ Here we have the block library.
 * Math: blocks for mathematical functions.
 * Text: blocks for output, formatting and search operations with text strings.
 * Lists: This section contain tools that allows the creation of object groups and search specific elements in them. 
+* Maps: Blocks to create data structures for keys and its values.
 * Color: Blocks for coloring objects.
 * Advanced js: These blocks can be used to write your own javascript code or import js files.
 * Parameters ui: Blocks to enhance the GUI.
 * IoT: Blocks to include connection to external webservices, invoke them, as well as send and receive parameters and messages with them in order to design IoT gadgets. 
 * Variables: Blocks to create programming variables and assign values to them.
 * Functions: Blocks to declare and invoke functions.
-* Library: Examples to experiment with.
+* Library: Examples to learn from, and experiment with.
 
 and the block workspace where we will be creating our 3D world.
 
