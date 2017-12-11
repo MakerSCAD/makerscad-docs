@@ -14,20 +14,20 @@ Logic Blocks
 In programming logic, is very useful to compare values of variables, MakerSCAD has Comparison operators to help with these tasks
 the first block is the "If" statement that allows us to compare between two variables, or compare if a variable has an specific value, or even if it is null or empty.
 
-.. figure:: /_static/images/CAD/logic/if.png
+.. figure:: /_static/logic/if.png
 
 we can help us with another blocks, like the comparator block, that will be used to determine if a variable is equal, not equal, bigger than or smaller than another variable.
 
-.. figure:: /_static/images/CAD/logic/comparator.png
+.. figure:: /_static/logic/comparator.png
 
 also there is a boolean logic operator block, it is used to use two conditions inside one single comparation "if" block, it has a dropdown list where you cn select "and" or "or" agregatio functions
 
-.. figure:: /_static/images/CAD/logic/and_or.png
+.. figure:: /_static/logic/and_or.png
 
 There is also a "test" block, best known in progrmming as the "ternary operator", it makes in a single line the comparisson between vriables using the if statement and an "else condition", executed when the main condition is not true.
 in the generated code yu can see that instead of "if" and "else" words it uses "?" and ":" simbols respectively
 
-.. figure:: /_static/images/CAD/logic/ternary.png
+.. figure:: /_static/logic/ternary.png
 
 .. _loops:
 
@@ -41,39 +41,57 @@ You can use this block to make a loop in a known number of iterations, in the bl
 
 Lets make the example of the image above:
 
-First, go to variables - bring a variable block to the workspace and name it "span"; also from variables, snap a value block and assign a value of -220.
-
-now, go to "Loops" and add a "Repeat n times" block, modify the value to 3.
-
-go to variables again and add a "set to" block, to set "snap" a value of "span+110".
-
-Now go to CAD - Scene, and bring an "Add" block, snap a Translate block to it (CAD - Transform -Translate), in the X Y z control put these values respectively ("span, 0, 0").
-
-Now, you will have 3 cubes in the workspace.
+First, go to "Loops" and add a "Repeat n times" block, modify the value to 3.
 
 
-.. figure:: /_static/images/CAD/logic/repeat_n.png
+Now go to CAD - Scene, and bring an "Add" block, snap a Translate block to it (CAD - Transform -Translate), look at the X Y Z control, here we can put values, but also we can use programming expressions, we will put a formula in x to have each cube separated by 10 units from the others, (the size of each cube is 100), note in the generated code that there is a variable called "count" that begins with 0 and increments by 1 on each iteration, if we put "count*110" we are saying that the first cube, will have an x position of 0 * 110= 0, the second is 110*1 = 110 and the third one is 110*2 = 220
+ 
+Now, you will have 3 cubes in the workspace separated to each other by 10.
+
+.. figure:: /_static/loops/repeat_n.png
 
 .. while_:
 Repeat While
-.. figure:: /_static/images/CAD/logic/repeat_while.png
+
+When you have a condition that must be true to continue the loop, but not necessarly know the exact number of iterations you can use the while loop.
+
+To do the last excersise using a while loop go to "Loops" and add a repeat while" block to the workspace.
+
+.. figure:: /_static/loops/repeat_while.png
+
+.. warning::
+  Be sure that the Auto render option is not checked when you are begining a while loop, and only click "Draw" once you have set the condition to exit the while".
+
+The first thing you will note is that there is a dropdown menu where you can select "while" or "until" the difference is that if you select "while" the loop will continue while the condition is true, but if you select "until" the loop will continue while the condition is false, for the excersise whe will leave the "while option"
+
+Then, go to Variables and select the block that says "Var1", snap it to the while and write the following expression..
+
+count < 3
+
+the expresion says that when control variable "count" reaches the value of 3 the loop will break and will not do more iterations. If you had used "until" instead of while, the expression could had been..
+
+count = 3
+you can also use a comparator block and var blocks to avoid writing the whole expresion
+
+.. note::
+instead of verifying if the value is 3 you could have check other  
 
 .. countfromto_:
 Count From/To
-.. figure:: /_static/images/CAD/logic/countfromto.png
+.. figure:: /_static/loops/countfromto.png
 
 .. foreachitem_:
 For each item in a list
-.. figure:: /_static/images/CAD/logic/foreachitem.png
+.. figure:: /_static/loops/foreachitem.png
 
 .. foreachitem_:
 For each key in a map
-.. figure:: /_static/images/CAD/logic/foreachkey.png
+.. figure:: /_static/loops/foreachkey.png
 
 
 .. break_:
 Break out of a loop
-.. figure:: /_static/images/CAD/logic/break.png
+.. figure:: /_static/loops/break.png
 
 .. _math:
 
