@@ -1,0 +1,116 @@
+.. _programming:
+
+##########################
+  Programming tools
+##########################
+
+MakersCAD provides with some programming tools blocks, they will help you create automate and define your objects parameters.
+
+.. _logic:
+
+Logic Blocks
+=============================
+
+In programming logic, is very useful to compare values of variables, MakerSCAD has Comparison operators to help with these tasks
+the first block is the "If" statement that allows us to compare between two variables, or compare if a variable has an specific value, or even if it is null or empty.
+
+.. figure:: /_static/images/CAD/logic/if.png
+
+we can help us with another blocks, like the comparator block, that will be used to determine if a variable is equal, not equal, bigger than or smaller than another variable.
+
+.. figure:: /_static/images/CAD/logic/comparator.png
+
+also there is a boolean logic operator block, it is used to use two conditions inside one single comparation "if" block, it has a dropdown list where you cn select "and" or "or" agregatio functions
+
+.. figure:: /_static/images/CAD/logic/and_or.png
+
+There is also a "test" block, best known in progrmming as the "ternary operator", it makes in a single line the comparisson between vriables using the if statement and an "else condition", executed when the main condition is not true.
+in the generated code yu can see that instead of "if" and "else" words it uses "?" and ":" simbols respectively
+
+.. figure:: /_static/images/CAD/logic/ternary.png
+
+.. _loops:
+
+Loop Blocks
+=============================
+
+.. repeatn_:
+Repeat N times
+
+You can use this block to make a loop in a known number of iterations, in the block you will see a text box that has a default value of ten, you can modify this value to the number of times you want the loop to be executed.
+
+Lets make the example of the image above:
+
+First, go to variables - bring a variable block to the workspace and name it "span"; also from variables, snap a value block and assign a value of -220.
+
+now, go to "Loops" and add a "Repeat n times" block, modify the value to 3.
+
+go to variables again and add a "set to" block, to set "snap" a value of "span+110".
+
+Now go to CAD - Scene, and bring an "Add" block, snap a Translate block to it (CAD - Transform -Translate), in the X Y z control put these values respectively ("span, 0, 0").
+
+Now, you will have 3 cubes in the workspace.
+
+
+.. figure:: /_static/images/CAD/logic/repeat_n.png
+
+.. while_:
+Repeat While
+.. figure:: /_static/images/CAD/logic/repeat_while.png
+
+.. countfromto_:
+Count From/To
+.. figure:: /_static/images/CAD/logic/countfromto.png
+
+.. foreachitem_:
+For each item in a list
+.. figure:: /_static/images/CAD/logic/foreachitem.png
+
+.. foreachitem_:
+For each key in a map
+.. figure:: /_static/images/CAD/logic/foreachkey.png
+
+
+.. break_:
+Break out of a loop
+.. figure:: /_static/images/CAD/logic/break.png
+
+.. _math:
+
+Math Blocks
+=============================
+
+.. _text:
+
+Text Blocks
+=============================
+
+.. _lists:
+
+List Blocks
+=============================
+
+.. _maps:
+
+Map Blocks
+=============================
+
+.. _color:
+
+Color Blocks
+=============================
+
+.. _variables:
+
+Variable Blocks
+=============================
+
+.. _functions:
+
+Function Blocks
+=============================
+
+.. _advancedjs:
+
+AdvancedJS Blocks
+=============================

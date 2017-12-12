@@ -16,6 +16,7 @@ They will help you create your 3d world and objects.
    cad/transform.rst
    cad/lights.rst
    cad/materials.rst
+   cad/groups.rst
    cad/animation.rst
    cad/interaction.rst
    cad/physics.rst
