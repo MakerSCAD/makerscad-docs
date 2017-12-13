@@ -1,0 +1,5 @@
+.. _advancedjs:
+
+###################
+AdvancedJS Blocks
+###################
