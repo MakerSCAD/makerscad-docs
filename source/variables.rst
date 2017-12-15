@@ -1,5 +1,5 @@
 .. _variables:
 
 ##################
-Variable Blocks
+Variables
 ##################

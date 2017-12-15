@@ -1,15 +1,9 @@
 .. _programming:
 
-##########################
-  Programming tools
-##########################
-
-MakersCAD provides with some programming tools blocks, they will help you create automate and define your objects parameters.
-
 .. _logic:
 
 ################
-Logic Blocks
+Logic
 ################
 
 In programming logic, is very useful to compare values of variables, MakerSCAD has Comparison operators to help with these tasks
@@ -25,7 +19,7 @@ also there is a boolean logic operator block, it is used to use two conditions i
 
 .. figure:: /_static/images/logic/and_or.png
 
-There is also a "test" block, best known in progrmming as the "ternary operator", it makes in a single line the comparisson between vriables using the if statement and an "else condition", executed when the main condition is not true.
+There is also a "test" block, best known in progrmming as the "ternary operator", it makes in a single line the  comparisson between vriables using the if statement and an "else condition", executed when the main condition is not true.
 in the generated code yu can see that instead of "if" and "else" words it uses "?" and ":" simbols respectively
 
 .. figure:: /_static/images/logic/ternary.png

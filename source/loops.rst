@@ -1,7 +1,7 @@
 .. _loops:
 
 ###############
-Loop Blocks
+Loop
 ###############
 
 .. repeatn_:
