@@ -27,7 +27,13 @@ you can use a variable and a 3D text (CAD - Parts - 3Dtext) like in the picture 
 Advanced operations block
 ===========================
 
- it includes operations like square root, absolute, negative, natural logarithm, log10, e power, 10 power
+ it includes operations like square root, absolute, negative, natural logarithm, log10, e power, 10 power, in this block you can snap another block with an expression, or simply write a number at the right of the block.
+
+.. figure:: /_static/images/math/advancedoperations.png
+
+For this example lets start with the last example, add another variable block called "var2", and then snap an "Advanced operations block" use the dropdown of the block to select "10ᶺ" and snap a block of "var2", look at the picture as a reference
+
+.. figure:: /_static/images/math/mathexample2.png
 
 
 Trigonometric functions
@@ -55,13 +61,16 @@ Aggregation functions
  block sum, min, max, average, modes, standar deviation, random item
 
 Reminder
+===========
 
 Constraint
+===========
 
 Random
+========
 
 Random fraction
-
+================         
 
 
 
