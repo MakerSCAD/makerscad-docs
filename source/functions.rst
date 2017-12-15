@@ -1,5 +1,5 @@
 .. _functions:
 
 ##################
-Function Blocks
+Function
 ##################

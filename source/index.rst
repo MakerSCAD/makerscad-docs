@@ -17,6 +17,15 @@ Contents:
    getting_started.rst
    CAD.rst
    program.rst
+   loops.rst
+   math.rst
+   text.rst
+   lists.rst
+   maps.rst
+   color.rst
+   advancedjs.rst
+   variables.rst
+   functions.rst
    examples.rst
    tutorials.rst
 
